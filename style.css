@@ -112,7 +112,6 @@ header .navbar {
     color: var(--white-color);
     font-size: var(--font-size-x1);
     font-weight: var(--Font-Weight-semibold);
-    font-family: "Poppins", sans-serif;
 }
 
 .navbar .nav-menu {
