@@ -1,15 +1,15 @@
+
 <!DOCTYPE html>
 <!-- Coding By CodingNepal - youtube.com/@codinnepal -->
 <html lang="en">
 <head>
-   <meta charset="UTF-8">  
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HANA ALI | WELCOME TO MY WEBSITE</title>
 
     <!-- linking font awesome for icons -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">  
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&display=swap" rel="stylesheet">  
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -17,7 +17,7 @@
    <header>
     <nav class="navbar section-content">
     <a href="#" class="nav-logo">
-        <h2 class="logo-text">👩‍💻  HANA-ALI</h2>
+        <h2 class="logo-text">👩‍💻  HANA ALI</h2>
     </a>
     <ul class="nav-menu">
         <button id="menu-close-button" class="fas fa-times"></button>
@@ -361,11 +361,12 @@ My goal is to deliver high-quality work that meets and exceeds client expectatio
 
         </ul>
 
-        <form action="#" class="contact-form">
-            <input type="text" placeholder="Your name" class="form-input" required>
-            <input type="email" placeholder="Your email" class="form-input" required>
-            <textarea placeholder="Your message" class="form-input" required></textarea>
-            <button class="submit-button">Submit</button>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form" id="contactForm">
+            <input type="text" name="name" placeholder="Your name" class="form-input" required>
+            <input type="email" name="email" placeholder="Your email" class="form-input" required>
+            <textarea name="message" placeholder="Your message" class="form-input" required></textarea>
+            <p class="form-status" id="formStatus">&nbsp;</p>
+            <button class="submit-button" id="contactSubmit">Submit</button>
         </form>
 
 
@@ -402,4 +403,3 @@ My goal is to deliver high-quality work that meets and exceeds client expectatio
    <script src="script.js"></script>
 </body>
 </html>
-

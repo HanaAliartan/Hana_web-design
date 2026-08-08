@@ -1,3 +1,4 @@
+
 /* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
@@ -63,8 +64,9 @@ button {
 }
 
 img {
-    width: 136%;
-    
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .section-content {
@@ -210,6 +212,11 @@ header .navbar {
     
 }
 
+.hero-section .hero-image-wrapper .hero-image {
+    width: 100%;
+    height: auto;
+}
+
 /* About section styling */
 .about-section {
 padding: 120px 0;
@@ -224,8 +231,8 @@ background: var(--ligth-pink-color);
 }
 
 .about-section .about-image-wrapper .about-image {
-    width: 450px;
-    height: 450px;
+    width: clamp(220px, 32vw, 450px);
+    height: clamp(220px, 32vw, 450px);
     object-fit: cover;
     border-radius: var(--Border-Radius-circle);
 }
@@ -383,6 +390,12 @@ background: var(--ligth-pink-color);
     resize: vertical;
 }
 
+.contact-section .contact-form .form-status {
+    font-size: 0.9rem;
+    margin: -6px 0 10px;
+    min-height: 20px;
+}
+ 
 .contact-section .contact-form .submit-button {
     padding: 10px 26px;
     margin-top: 10px;
@@ -558,6 +571,10 @@ body.show-mobile-menu header::before {
     .Service-section .Service-list .Service-item .service-image {
         max-width: 200px;
     }
+
+    .portfolio-section .portfolio-list .portfolio-item {
+        width: calc(50% - 16px);
+    }
    
     
     .contact-section .section-content {
@@ -577,6 +594,26 @@ body.show-mobile-menu header::before {
     width: 100%;
 }
 
+.portfolio-section .portfolio-list {
+    gap: 16px;
+}
+
+.portfolio-section .portfolio-list .portfolio-item {
+    width: 100%;
+}
+
+.about-section {
+    padding: 70px 0;
+}
+
+.section-title {
+    padding: 40px 0 50px;
+}
+
+.contact-section .contact-info-list .contact-info {
+    text-align: left;
+}
+
 .footer-section .section-content {
     flex-direction: column;
     gap: 20px;
@@ -587,3 +624,4 @@ body.show-mobile-menu header::before {
 }
 
 
+ 
